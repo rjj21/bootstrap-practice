@@ -4,76 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <title>Library</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#cards" class="nav-link">Featured Books</a></li>
+                    <li class="nav-item"><a href="#books" class="nav-link">Book Descriptions</a></li>
+                    <li class="nav-item"><a href="#form" class="nav-link">Book Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section id="cards" class="container py-5">
         <h2>Featured Books</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
-                    <img src="https://cdn.waterstones.com/bookjackets/large/9781/7866/9781786699503.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Too Like the Lightening</h5>
-                        <p class="card-text">Ada Palmer</p>
+                <a href="#terra-ignota">
+                    <div class="card">
+                        <img src="https://cdn.waterstones.com/bookjackets/large/9781/7866/9781786699503.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Too Like the Lightening</h5>
+                            <p class="card-text">Ada Palmer</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/51Ezl6FI4wL.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Leviathan Wakes</h5>
-                        <p class="card-text">James S. A. Corey</p>
+                <a href="#expanse">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/51Ezl6FI4wL.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Leviathan Wakes</h5>
+                            <p class="card-text">James S. A. Corey</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/7121cjO9LAL.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">The Weirdstone of Brisingamen</h5>
-                        <p class="card-text">Alan Garner</p>
+                <a href="#weirdstone">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/7121cjO9LAL.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Weirdstone of Brisingamen</h5>
+                            <p class="card-text">Alan Garner</p>
+                        </div>
                     </div>
-                </div>
+                </a>
+
             </div>
         </div>
     </section>
-    <section class="container py-5 books">
+    <section id="books" class="container py-5">
         <h2>Book Descriptions</h2>
-        <div id="terra-ignota" class="row bg-light">
+        <div id="terra-ignota" class="row bg-primary py-3">
             <div class="col-md-4 ">
-                Image
+                <img src="https://cdn.waterstones.com/bookjackets/large/9781/7866/9781786699503.jpg" alt="" class="img-fluid">
                 
             </div>
             <div class="col-md-8">
-                <h4>Description</h4>
+                <h5>Too Like the Lightening</h5>
+                <p>Ada Palmer</p>
+                <h5>Summary</h5>
                 <p>Mycroft Canner is a convict. For his crimes he is required, as is the custom of the 25th century, to wander the world being as useful as he can to all he meets. Carlyle Foster is a sensayer--a spiritual counselor in a world that has outlawed the public practice of religion, but which also knows that the inner lives of humans cannot be wished away.</p>
             </div>
         </div>
-        <div id="expanse" class="row bg-secondary">
+        <div id="expanse" class="row bg-secondary py-3">
             <div class="col-md-8">
-                <h4>Description</h4>
-                <p>Humanity has colonized the solar system—Mars, the Moon, the Asteroid Belt and beyond—but the stars are still out of our reach.
-
+                <h5>Leviathan Wakes</h5>
+                <p>James S. A. Corey</p>
+                <h5>Summary</h5>
+                <p>Humanity has colonized the solar system—Mars, the Moon, the Asteroid Belt and beyond—but the stars are still out of our reach.<br>
                     Jim Holden is XO of an ice miner making runs from the rings of Saturn to the mining stations of the Belt. When he and his crew stumble upon a derelict ship, the Scopuli, they find themselves in possession of a secret they never wanted. A secret that someone is willing to kill for—and kill on a scale unfathomable to Jim and his crew. War is brewing in the system unless he can find out who left the ship and why.</p>
             </div>
             <div class="col-md-4 ">
-                Image
+                <img src="https://m.media-amazon.com/images/I/51Ezl6FI4wL.jpg" alt="" class="img-fluid">
             </div>
             
         </div>
-        <div id="weirdstone" class="row bg-light">
+        <div id="weirdstone" class="row bg-primary py-3">
             <div class="col-md-4 ">
-                Image
+                <img src="https://m.media-amazon.com/images/I/7121cjO9LAL.jpg" alt="" class="img-fluid">
                 
             </div>
             <div class="col-md-8">
-                <h4>Description</h4>
+                <h5>The Weirdstone of Brisingamen</h5>
+                <p>Alan Garner</p>
+                <h5>Summary</h5>
                 <p>When Colin and Susan are pursued by eerie creatures across Alderley Edge, they are saved by the Wizard. He takes them into the caves of Fundindelve, where he watches over the enchanted sleep of one hundred and forty knights. But the heart of the magic that binds them - Firefrost, also known as the Weirdstone of Brisingamen - has been lost. The Wizard has been searching for the stone for more than 100 years, but the forces of evil are closing in, determined to possess and destroy its special power. Colin and Susan realise at last that they are the key to the Weirdstone's return. But how can two children defeat the Morrigan and her deadly brood?</p>
             </div>
         </div>
+    </section>
+    <section id="form" class="container py-5">
+        <h2>Suggest new books to be featured</h2>
+        <form>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="Description" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </section>
 </body>
 </html>
